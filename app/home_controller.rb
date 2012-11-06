@@ -4,6 +4,7 @@ class HomeController < UIViewController
   end
 
   def viewDidLoad
+    self.title = "Home"
     label = UILabel.alloc.initWithFrame([[15,100], [280,140]])
     label.text = "Hello Everybody!"
     label.font = UIFont.boldSystemFontOfSize(25)
