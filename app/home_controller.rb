@@ -5,7 +5,7 @@ class HomeController < UIViewController
 
   def viewDidLoad
     label = UILabel.alloc.initWithFrame([[15,100], [280,140]])
-    label.text = "Hello RubyDCamp!"
+    label.text = "Hello Everybody!"
     label.font = UIFont.boldSystemFontOfSize(25)
     label.textColor = UIColor.blueColor
     label.textAlignment = UITextAlignmentCenter
