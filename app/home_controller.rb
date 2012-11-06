@@ -15,11 +15,15 @@ class HomeController < UIViewController
     button.frame = [[15, 300], [280, 50]]
     button.setTitle("Move to next view", forState: UIControlStateNormal)
     button.addTarget(self,
-                     action: "movetoChildView:",
+                     action: "moveToChildView:",
                      forControlEvents: UIControlEventTouchUpInside)
 
     view.addSubview(label)
     view.addSubview(button)
+  end
+
+  def moveToChildView(sender)
+    self.parentViewController.pushViewController(UIViewController.alloc.init,animated:true)
   end
 
 end
