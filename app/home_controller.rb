@@ -12,8 +12,8 @@ class HomeController < UIViewController
     label.textAlignment = UITextAlignmentCenter
 
     button = UIButton.buttonWithType(UIButtonTypeRoundedRect)
-    button.frame = [[15, 300], [200, 50]]
-    button.setTitle)"Move to next view", forState: UIControlStateNormal)
+    button.frame = [[15, 300], [280, 50]]
+    button.setTitle("Move to next view", forState: UIControlStateNormal)
     button.addTarget(self,
                      action: "movetoChildView:",
                      forControlEvents: UIControlEventTouchUpInside)
